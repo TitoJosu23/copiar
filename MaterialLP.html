@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Página Web</title>
+</head>
+<body>
+    <header>
+        <h1>Página Web</h1>
+    </header>
+    <section>
+        <p><b>HTML</b> (Lenguaje de Marcas de Hipertexto) es el componente más básico de la Web. Define el significado y la estructura del contenido web. Además de HTML, generalmente se utilizan otras tecnologías para describir la apariencia/presentación de una página web (CSS) o la funcionalidad/comportamiento. HTML no es un lenguaje de programación; es un lenguaje de marcado que define la estructura de tu contenido.</p>
+        <p>HTML5 es la quinta revisión del lenguaje de marcado HTML, que es utilizado para estructurar y presentar el contenido en la web. Fue publicado como un estándar por el consorcio World Wide Web (W3C) en Octubre de 2014. Trajo consigo muchas características nuevas y mejoradas, incluyendo soporte para audio y video, gráficos vectoriales escalables (SVG), y capacidad de almacenamiento local.</p>
+        <p>Así mismo, HTML utiliza etiquetas o marcas, que consisten en pequeños bloques de código, las cuales indican al navegador cómo debe interpretar el contenido recogido entre dichas etiquetas.</p>
+        <h2>Anatomía de un Elemento HTML</h2>
+        <img src="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics/grumpy-cat-small.png" alt="Anatomía de un elemento HTML">
+        <p>Los elementos pueden también tener atributos, que contienen información adicional acerca del elemento.</p>
+        <h2>Estructura Básica de una Página HTML</h2>
+        <img class="structure-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTMSs3fmjqq51THiMgIOp2OAeeKewXf43nlSWias2qig&s" alt="Estructura básica de una página HTML">
+        <p>La estructura básica de una página web se compone por las etiquetas &lt;html&gt;, &lt;head&gt; y &lt;body&gt;. La primera indica el comienzo de la página; la segunda es la cabecera y contiene información descriptiva del sitio; y la tercera es la que abarca todos los elementos visibles dentro de la página.</p>
+        <p>Cabe destacar que, en HTML contamos con Tablas, Botones y Formularios, con sus respectivas etiquetas, a continuación un ejemplo:</p>
+        <hr>
+        <h2>Formulario de Comentarios</h2>
+        <form action="#">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="comment">Comentario:</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <hr>
+        <h2>CSS </h2>
+        <p>Las siglas <b>CSS</b> (Cascading Style Sheets) significan «Hojas de estilo en cascada» y parten de un concepto simple pero muy potente: aplicar estilos (colores, formas, márgenes, etc...) a uno o varios documentos (generalmente documentos HTML, páginas webs) de forma automática y masiva.<br>
+            <br>Se le denomina estilos en cascada porque se lee, procesa y aplica el código desde arriba hacia abajo (siguiendo un patrón denominado herencia que trataremos más adelante) y en el caso de existir ambigüedad (código que se contradice), se siguen una serie de normas para resolver dicha ambigüedad.</p>
+        <h2>¿Por qué se usa CSS?</h2>
+        <p>La idea de CSS es la de utilizar el concepto de separación de presentación y contenido. Este concepto se basa en que, como programadores, lo ideal es separar claramente el código que escribimos. ¿Por qué? Porque con el tiempo, esto hará que el código sea más fácil de modificar y mantener.
+            <br> La idea es la siguiente:
+        </p>
+        <ul>
+            <li>
+                <p class="texto">Los documentos HTML (contenido) incluirán sólo información y datos, todo lo relativo a la información a transmitir.</b>
+            </li>
+            <li>
+                <p class="texto">Los documentos CSS (presentación) inclurán sólo los aspectos relacionados con el estilo (diseño, colores, formas, etc...).</b>
+            </li>
+        </ul>
+        <h2>Equipo</h2>
+        <div class="circles">
+            <div class="circle">
+                <img src="img/male.jpg" alt="Emanuel Rodriguez">
+                <p class="circle-text">Emanuel Rodriguez</p>
+            </div>
+            <div class="circle">
+                <img src="img/female1.jpg" alt="Yaneth Doria">
+                <p class="circle-text">Yaneth Doria</p>
+            </div>
+            <div class="circle">
+                <img src="img/female.jpg" alt="Leniangel Pérez">
+                <p class="circle-text">Leniangel Pérez</p>
+            </div>
+            <div class="circle">
+                <img src="img/male2.jpg" alt="Isaac Montilla">
+                <p class="circle-text">Isaac Montilla</p>
+            </div>
+            <div class="circle">
+                <img src="img/male3.jpg" alt="José Bustamante">
+                <p class="circle-text">José Bustamante</p>
+            </div>
+            <div class="circle">
+                <img src="img/male4.jpeg" alt="Richard Herrera">
+                <p class="circle-text">Richard Herrera</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Equipo de Emanuel Rodriguez - 23 de Mayo de 2024<br>Ingeniería en Informática - UNERG</p>
+    </footer>
+</body>
+</html>
