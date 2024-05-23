@@ -9,40 +9,50 @@ body {
     background-color: #f0f0f0;
     color: #051532;
 }
+
 header {
     background-color: #051532;
     color: white;
     text-align: center;
     width: 100%;
     font-size: 1.5em;
+    padding: 10px 0;
 }
+
 section {
     max-width: 800px;
     padding: 20px;
 }
+
 p {
     text-align: justify;
 }
+
 img {
     max-width: 100%;
     height: auto;
 }
+
 .structure-image {
     display: block;
     margin: 20px auto;
-    max-width: 600px;
+    max-width: 100%;
 }
+
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    max-width: 100%;
 }
+
 form label {
     width: 100%;
     max-width: 400px;
     text-align: left;
 }
+
 form input, form textarea {
     margin-bottom: 10px;
     padding: 10px;
@@ -52,6 +62,7 @@ form input, form textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 form button {
     padding: 10px 20px;
     font-size: 1em;
@@ -62,21 +73,23 @@ form button {
     cursor: pointer;
     margin-top: 10px;
 }
+
 form button:hover {
     background-color: #051532;
 }
+
 .circles {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center; 
     margin-top: 20px;
 }
+
 .circle {
     text-align: center;
     margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
+
 .circle img {
     width: 100px;
     height: 100px;
@@ -84,20 +97,47 @@ form button:hover {
     object-fit: cover;
     border: 2px solid #051532;
 }
+
 .circle p {
-    margin-top: 5px; /* Espacio superior */
-    text-align: center; /* Centrar el texto */
+    margin-top: 5px;
+    text-align: center;
 }
 
 footer {
     background-color: #051532;
     color: white;
-    padding: 10px 0; /* Footer más pequeño */
+    padding: 10px 0;
     text-align: center;
     width: 100%;
     font-size: 0.8em;
 }
+
 footer p {
-    margin: 0; 
+    margin: 0;
     text-align: center;
+}
+
+/* Media Queries para hacer la página responsive */
+
+@media screen and (max-width: 600px) {
+    section {
+        padding: 10px; /* Reducir el relleno en pantallas pequeñas */
+    }
+
+    form input, form textarea, form button {
+        max-width: 100%; /* Asegurar que los campos de entrada y el botón se extiendan completamente en pantallas pequeñas */
+    }
+
+    .circles {
+        margin-top: 10px; /* Reducir el espacio entre los círculos en pantallas pequeñas */
+    }
+
+    .circle {
+        margin: 5px; /* Reducir el espacio entre los círculos en pantallas pequeñas */
+    }
+
+    form{
+        width: 90%;
+        margin: 0 auto;  /* Reducir el espacio entre los margenes del form para que sea mas agradable a la vista */
+    }
 }
